@@ -1,0 +1,55 @@
+Object-Oriented Programming (OOP) principles are fundamental concepts in software development that help in designing, organizing,
+ and maintaining code. The main OOP principles are:
+
+Encapsulation:
+Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data into a single unit known as a 
+class.
+It hides the internal state of an object and restricts direct access to some of its components.
+
+
+Inheritance:
+Inheritance is a process that allows one class to inherit the properties and behaviors of another class.
+It promotes code reusability and establishes a relationship between a superclass (parent class,base class) and a subclass 
+(derived class,child class).
+
+
+Polymorphism:
+Polymorphism means "many forms".
+There are two types of polymorphism: compile-time (method overloading) and runtime (method overriding).
+
+
+Abstraction:
+Abstraction is the process of simplifying complex systems by modeling classes based on the essential properties and behaviors they share.
+It allows developers to focus on the relevant details of an object while ignoring unnecessary details.
+
+
+
+
+
+
+
+Like we are making packages and creating classes in it.
+In same way Java has already many packages and classes predefined.
+Object class is parent of every class in Java.
+The classes we create or any class predefined in Java are child of Object class.
+In Java, the Object class is a root class for all classes. It is the top of the class hierarchy. Every class in Java is directly or 
+indirectly derived from the Object class.
+
+Method Overloading(Compile time polymorphism)
+Definition: Method overloading occurs when a class has multiple methods with the same name but different parameters.
+In method overloading we have same method with different number of parameters in a class.
+
+Key Points:
+Methods must have the same name.
+Parameters must be different (in terms of number, type, or both).
+Return type doesn't matter for overloading.
+
+
+Method Overriding(Runtime Polymorphism):
+Definition: Method overriding occurs when a subclass(child class) provides a custom implementation for a method that is already 
+defined in its superclass(parent class).
+
+Key Points:
+Methods must have the same name, parameters, and return type.
+It is used in inheritance, where a subclass(child class) provides a specific implementation for a method defined in its superclass
+(Parent class).
