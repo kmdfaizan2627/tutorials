@@ -1,0 +1,58 @@
+Access Modifiers are of four types.
+1.public: It is Accessible from anywhere.
+2.private: It is Accessible only within the same class.
+3.protected: It is Accessible within the same package and by subclasses 
+outside the package.
+4.(default/package-private): Accessible only within the same package.
+
+Why Java is platform independent?
+Java programs are compiled then it generates .class file which is in bytecode
+that can run on any system which has JVM.
+This java design principle is known as "Write Once, Run Anywhere".
+
+the JVM maintains five types of memory to allocate in order to run a program
+namely
+Method Area
+Heap Area
+Stack Area
+Register Area
+Native Area
+
+
+Static variables:
+Static variables, also known as class variables, are associated with the class
+rather than any specific instance of the class.
+Memory for static variables is allocated when the class is loaded into 
+the JVM.
+This memory is shared among all instances of the class.
+We do not required to create object of class to call, we can direcly call
+it with class name. 
+
+Static Methods:
+Similar to static variables, static methods are associated with the class rather than with instances.
+Memory for the code of a static method is allocated when the class is loaded.
+We do not required to create object of class to call, we can direcly call
+it with class name.
+
+The method area is a part of non-heap memory where the JVM stores class 
+metadata, including information about methods, fields, and other class-level data.
+Static variables or methods are allocated memory in the method area. These 
+variables areshared among all instances of a class.
+The method area is commonly shared among all threads running in a JVM, and it
+is created when the JVM starts.
+
+Non-Static variables.
+Non-static variables in Java, also known as instance variables, are stored in memory 
+associated with each instance of a class.
+It is not like static variables, which are shared among all instances of a class,
+each instance of a class has its own copy of non-static variables.
+Memory for instance variables is allocated when an object (instance of the class) is
+created.
+
+
+Final Keyword-
+When a class is declared as final, it means that the class cannot be sub classed or 
+extended by other classes.
+No other class can be inherited from a final class.
+If a class is marked as final, its methods are implicitly final as well. This means 
+that subclasses cannot override these methods. 
