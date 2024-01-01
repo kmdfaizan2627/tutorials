@@ -10,7 +10,9 @@ constructor with no parameters.
 It is also called non- parameterized constructor.
 Example-
 public class MyClass {
+    public MyClass(){
     // Default constructor is automatically created by JVM if not defined
+    }
 }
 
 2.Parameterized Constructors:
