@@ -3,7 +3,7 @@ package com.encapsulation;
 // There are two ways to initialize a object either by getter setter or by using constructors.
 //Default constructor already given by Java which is  unon-parameterized constructor. But if there is need to create custom constructor then
 //we can create parameterized constructor.
-// So constructos are of two types first is non-parameterized provided by jvm itself and second is parameterized that we create.
+// So constructor are of two types first is non-parameterized provided by jvm itself and second is parameterized that we create.
 // Constructors are not part of Encapsulation.
 // Setter Getter is part of Encapsulation.
 class Encap{ //Pojo Class/Mpdels/Dto(Data transfer Object)
@@ -61,6 +61,7 @@ class Encap{ //Pojo Class/Mpdels/Dto(Data transfer Object)
 	
 }
 //Encap obj = new Encap();// obj is object reference , new Encap() initializing object.
+
 public class EncapsulationConcept {
 	public static void main(String[] args) {
 		Encap obj = new Encap(); // It is a non parameterized constructor. Constructor are used to initialize object

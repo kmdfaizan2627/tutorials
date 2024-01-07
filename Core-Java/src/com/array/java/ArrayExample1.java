@@ -1,9 +1,9 @@
 package com.array.java;
 
 // An array is a container object that holds a fixed number of values of same type
-// We can not have different datatype in one array.
+// We can not have different data type in one array.
 // Arrays are of fixed size. Once we have initialize we can not change it.
-// Arrays are homogenous because it have only one data type in one array.
+// Arrays are homogeneous because it have only one data type in one array.
 public class ArrayExample1 {
 	int[] arr = { 14, 16, 3, 1, 79, 20, 7 }; // It is of int data type array.
 

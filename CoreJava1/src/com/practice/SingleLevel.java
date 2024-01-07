@@ -17,7 +17,7 @@ public class SingleLevel {
 	Cat ob = new Cat();
 	ob.f1();
 	ob.f2();
-	ob.
+	
 
 	}
 		
