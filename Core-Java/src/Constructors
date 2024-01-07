@@ -1,0 +1,32 @@
+Constructor 
+-> a constructor is a special type of method used to initialize objects of a class.
+It has the same name as the class and is called automatically when an object is 
+created.Constructors play a crucial role in setting up the initial state of an object.
+
+There are two types of constructors-
+1.Default Constructor:
+If you don't define any constructor in your class, Java provides a default
+constructor with no parameters.
+It is also called non- parameterized constructor.
+Example-
+public class MyClass {
+    public MyClass(){
+    // Default constructor is automatically created by JVM if not defined
+    }
+}
+
+2.Parameterized Constructors:
+Constructors with parameters are called Parameterized constructors.
+It allow us to initialize class object with properties with their values during 
+object creation.
+Example - 
+public class Person {
+    private String name;
+    private int age;
+    
+    // Parameterized constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
