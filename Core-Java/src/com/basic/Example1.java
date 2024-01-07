@@ -2,7 +2,7 @@ package com.basic;
 
 public class Example1 { // class will always start with capital letter. It will be always alpha-numeric
 	public static void main(String[] args) {
-		int a = 10; 
+	  int a =20;
 		System.out.println(a);
 		
 	}

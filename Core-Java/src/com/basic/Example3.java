@@ -13,5 +13,5 @@ public class Example3 {
       }
 }
 
-//Note - We can not create class inside another class.
+//Note - We can not create class inside another class. 
 // We can not create method inside another method.
