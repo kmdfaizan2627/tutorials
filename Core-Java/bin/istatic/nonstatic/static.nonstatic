@@ -1,0 +1,15 @@
+static
+static variables are loaded at class loading time, when class is loaded in the memory. it is also known as class variables. 
+it is common to all objects of the class.
+In this, a single copy of a static variable is created and shared among all the objects of the class.
+static variables we can call directly with class name.
+example
+1. className.staticVariable  
+
+
+
+Non-Static variables
+
+ To access non static variables we need to create class object then we can only access it.
+ 
+   
