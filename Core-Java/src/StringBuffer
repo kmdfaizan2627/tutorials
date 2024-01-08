@@ -1,0 +1,21 @@
+StringBuffer is a class in Java that provides a mutable(change) sequence of characters.
+It is synchronized, making it thread-safe.
+You can append, insert, delete, and modify content in a StringBuffer.
+It has methods for converting to a String, getting length and capacity, and more.
+It is less efficient than StringBuilder in single-threaded scenarios due to 
+synchronization.
+If thread safety is not a concern, it's often recommended to use StringBuilder for 
+better performance in single-threaded environments.
+
+public class StringBufferExample {
+    public static void main(String[] args) {
+        // Creating a StringBuffer with an initial value
+        StringBuffer stringBuffer = new StringBuffer("Hello");
+
+        // Appending text to the StringBuffer
+        stringBuffer.append(" World");
+        System.out.println("Result: " + stringBuffer.toString());
+        }
+   }
+   Output- Hello World
+   Only one object is here 

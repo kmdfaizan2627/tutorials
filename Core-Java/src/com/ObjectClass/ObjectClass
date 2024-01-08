@@ -1,0 +1,32 @@
+In Java, the Object class is at the top of the class hierarchy, and every class in Java is a direct or indirect subclass of Object. Therefore, every object in Java inherits the methods defined in the Object class. Here are some of the commonly used methods from the Object class:
+
+toString() Method:
+Signature: public String toString()
+Returns a string representation of the object. By default, it returns the class name followed 
+by the "@" symbol and the object's hashcode. It is often overridden in custom classes to provide a meaningful string representation.
+
+equals(Object obj) Method:
+Signature: public boolean equals(Object obj)
+Indicates whether some other object is "equal to" this one. The default implementation in the 
+Object class compares object references, but it is often overridden in user-defined classes to compare content.
+
+hashCode() Method:
+Signature: public int hashCode()
+Returns a hash code value for the object. The default implementation in the Object class returns
+ the internal address of the object as an integer. It is commonly overridden in classes that override equals() to ensure consistency between the two methods.
+
+getClass() Method:
+Signature: public final Class<?> getClass()
+Returns the runtime class of an object. It returns an instance of the Class class, which 
+represents the class of the object.
+
+clone() Method:
+Signature: protected Object clone() throws CloneNotSupportedException
+Creates and returns a copy of this object. It is important to note that this method is protected and needs to be overridden in the subclass with a public version.
+notify(), notifyAll(), and wait() Methods:
+
+These methods are used for inter-thread communication and synchronization.
+notify(): Wakes up one of the threads that are currently waiting on the object.
+notifyAll(): Wakes up all the threads that are currently waiting on the object.
+wait(): Causes the current thread to wait until another thread invokes the notify() or notifyAll() method for this object.
+These are some of the commonly used methods inherited from the Object class. When you create your own classes, you can override these methods to provide custom behavior based on your class's requirements.
