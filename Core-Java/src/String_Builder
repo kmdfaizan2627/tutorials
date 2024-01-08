@@ -1,0 +1,37 @@
+String Builder
+StringBuilder is  mutable sequence of characters, allowing you
+to modify the contents of a string without creating a new object for each
+modification. The StringBuilder class is part of the java.lang package.
+
+Here's a concise overview of StringBuilder:
+
+*Mutable: StringBuilder is mutable, which means you can change its content without 
+creating a new object.
+*Efficient Concatenation: It is particularly useful for efficient string concatenation,
+especially when dealing with a dynamic or unknown number of concatenations.
+*Methods: StringBuilder provides methods like append(), insert(), delete(),
+deleteCharAt(), replace(), etc., for modifying the contents.
+
+StringBuilder builder = new StringBuilder("Hello");
+builder.append(" World");
+
+*Conversion to String: You can convert a StringBuilder to a String using the 
+toString() method.
+StringBuilder builder = new StringBuilder("Hello");
+String result = builder.toString();
+
+Here's a short example of StringBuilder:
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        StringBuilder builder = new StringBuilder("Hello");
+
+        builder.append(" World");  // Append operation
+        builder.insert(5, ",");    // Insert operation at index 5
+
+        System.out.println(builder.toString());  // Output: Hello, World
+    }
+}
+
+In this example, StringBuilder is used to efficiently build and modify a string by
+appending " World" and inserting a comma at index 5. The final result is then 
+converted to a String using toString().
