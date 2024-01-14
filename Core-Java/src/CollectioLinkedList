@@ -1,0 +1,37 @@
+LinkedList is implemented as a doubly-linked list, where each element (node) in the list 
+contains a reference to both the next and previous elements. This structure allows for efficient
+insertion and deletion operations at any position in the list.
+
+Creating a LinkedList:
+// Creating a LinkedList of Strings
+LinkedList<String> myLinkedList = new LinkedList<>();
+
+Adding Elements:
+myLinkedList.add("Element 1");
+myLinkedList.add("Element 2");
+myLinkedList.add("Element 3");
+
+Accessing Elements:
+String element = myLinkedList.get(1);
+System.out.println("Element at index 1: " + element);
+
+Iterating Over Elements:
+for (String item : myLinkedList) {
+    System.out.println(item);
+}
+
+
+Removing Elements:
+myLinkedList.remove("Element 2");
+
+
+LinkedList Size:
+int size = myLinkedList.size();
+System.out.println("Size of LinkedList: " + size);
+
+
+Note -
+LinkedList is suitable for scenarios where we quickly perform insertions or deletions in the
+middle of the list. However, keep in mind that random access to elements (e.g., using get(index))
+is less efficient compared to ArrayList. The choice between ArrayList and LinkedList depends on
+the specific requirements of your application.

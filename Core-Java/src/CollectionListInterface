@@ -1,0 +1,46 @@
+1.List Interface:   // Important
+Represents an ordered collection of elements.
+Common implementations include ArrayList, LinkedList, and Vector.
+
+ArrayList-
+ArrayList is a part of the Java Collections Framework and is found in the java.util package. It
+implements the List interface and provides a dynamic array that can grow or shrink in size as 
+elements are added or removed.
+
+ArrayList can initially store up to 10 elements without needing to resize its internal array.
+0.75f is the load factor.
+
+Creating an ArrayList:
+ArrayList<Data Type> list = new ArrayList<>();
+
+Adding Elements in ArrayList:
+list.add("Element 1");
+list.add("Element 2");
+list.add("Element 3");
+
+Accessing element of an ArrayList:
+String element = list.get(1); // Inside get method we put index
+System.out.println(element);  // Output: Element 2
+-> It means with the help of index we can directly search an element.
+
+Iterating over ArrayList
+for (String item : list) {
+    System.out.println(item);
+}
+
+
+Removing Element from ArrayList:
+list.remove("Element 2");
+
+To get size of ArrayList -
+int size = list.size();
+System.out.println("Size of ArrayList: " + size);
+
+Other Operations:
+ArrayList provides various methods for other operations like checking if it contains an element,
+finding the index of an element, clearing the list, etc.
+boolean containsElement = list.contains("Element 1");
+int indexOfElement = list.indexOf("Element 3");
+list.clear();
+
+

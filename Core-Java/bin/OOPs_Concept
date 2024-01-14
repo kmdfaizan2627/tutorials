@@ -1,0 +1,60 @@
+What is OOPs concept?
+OOPs is object oriented programming system.It increases code readability and reusability. 
+There are four Principles of overriding.
+1. Polymorphism
+-> Polymorphism means many forms.
+Two types of Polymorphism
+->Method Overloading(also known as compile type polymorphism)
+When we have a class with different methods having same name but number of parameters in it are different then it is Method
+overriding.
+In other words class having number of methods with same name but different signatures.
+
+->Method Overriding
+Method overriding is known as runtime type polymorphism. It can only achieved through inheritance only. 
+In method overriding we extend a class from another class to change functionality of method according to our requirement.
+
+Abstraction-
+Abstraction means hiding actual functionality of method.
+Here we just define a method but we don't provide actual functionality of that abstract method.
+Can we instantiate Abstract class?
+We can not instantiate abstract class. First we need to extend Abstarct class to another class and then we can instantiate that class which is extending it.
+We can only create object reference of Abstract class but can instantiate its child class only with new keyword.
+
+
+2.Inheritance
+-> Inheritance is a relationship between Parent(base,super) and Child(subclass) class.
+If inheritance is occuring between two classes then we use extend keyword.
+But if a class implementing Interface then we use implement keyword.
+
+There are four types of inheritance
+-> Single Level inheritance
+When there is one parent and one child then it is Single Level Inheritance.
+
+->MultiLevel Inheritance
+Multilevel Inheritance can be achieved when number od classes extends each other.
+Example - class A  is extending Class B and Class B extending class C and Class C is extending class D  like wise and child the last child will have properties of all parent classes.
+but class B will have Class A and class B properties.
+class C will have class A and class B properties with its own property also.
+here class D is most sub class so it will have all properties of class A,B, C and with its own properties that it is having.
+
+->Hybrid Inheritance 
+Hybrid inheritance can achieved when a class extends a another class and implements an interface also then it is hybrid interface.
+
+->Multiple Inheritance
+Multiple Inheritance is not allowed in Java in terms of classes due to ambiguity issue.
+Because Suppose we have class A and class  B and both are having f1() and class C is extending class A and B. And now we have created
+object of class C and with that object if we will try to call f1() method then compiler will get confused which method it is calling
+class A method or class B method. 
+When a class implements more than one interface then it is Multiple inheritance.
+With interfaces we can achieve it because in interface we don't define body of class.
+So when a class implements two interfaces A and B both having f1() method but after overriding it, we give body to it so it is
+achievable in terms of interfaces.
+
+3.Encapsulation
+-> Encapsulation means binding of class and its variables as a single unit. 
+In Encapsulation every variable should be private.
+It is mainly done when we dont want give direct access to the class variables to anyone. So we provide public getters and setter 
+methods to access those variables.
+
+
+

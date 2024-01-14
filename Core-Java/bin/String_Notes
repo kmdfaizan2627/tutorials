@@ -1,0 +1,58 @@
+String
+-> A string is a sequence of characters.
+-> It  is part of the java.lang package.
+-> Strings in Java are immutable, meaning once a string object is created, its 
+   cannot be changed. 
+
+*  String Declaration:
+You can declare a string in Java using the String class. There are several ways to
+create a string:
+String str1 = "Hello, World!";  // Using double quotes
+String str2 = new String("Hello, World!");  // Using the String class constructor
+
+* String Concatenation:
+You can concatenate strings using the + operator:
+String firstName = "John";
+String lastName = "Doe";
+String fullName = firstName + " " + lastName;
+
+* String Length:
+You can find the length of a string using the length() method:
+String str = "Hello, World!";
+int length = str.length();
+
+* String Methods:
+The String class provides various methods for manipulating strings, such as charAt(),
+substring(), toUpperCase(), toLowerCase(), equals(), compareTo(), etc.
+String text = "example";
+char firstChar = text.charAt(0);
+String subString = text.substring(2, 5);
+
+* String Comparison:
+When comparing strings for equality, you should use the equals() method:
+String str1 = "Hello";
+String str2 = "World";
+boolean isEqual = str1.equals(str2);
+
+* String Immutability:
+As mentioned earlier, strings in Java are immutable. Operations that seem to modify
+a string actually create a new string. This immutability has advantages in terms of 
+safety and efficiency.
+String original = "Hello";
+String modified = original.concat(", World!");  // Creates a new string
+
+* String Memory
+When you create a string literal (e.g., String str = "Hello";), 
+There is a special area of the heap memory known as the "String Pool" or "String 
+Constant Pool."
+If you create another string with the same literal value, Java doesn't create a new
+object but instead returns a reference to the existing object in the String Pool
+
+When you create strings using the new keyword and the String constructor (e.g., 
+String str = new String("Hello");), a new string object is created in the regular 
+heap memory, not the String Pool.
+
+* Immutability and String Concatenation:
+Strings in Java are immutable, meaning their values cannot be changed after creation.
+String concatenation (e.g., using the + operator) creates a new string object rather
+than modifying the existing ones.

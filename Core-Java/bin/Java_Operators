@@ -1,0 +1,23 @@
+Relational Operators:
+== (Equal to)
+!= (Not equal to)
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+
+Arithmetic Operators:
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+% (Modulus - remainder of division)
+
+Logical Operators:
+&& (Logical AND)
+|| (Logical OR)
+! (Logical NOT)
+
+Increment and Decrement Operators:
+++ (Increment by 1)
+-- (Decrement by 1)

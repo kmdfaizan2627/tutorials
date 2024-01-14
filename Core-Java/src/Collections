@@ -1,0 +1,37 @@
+
+Collection
+It comes under java.util package.
+A collection is an object that represents a group of objects, known as elements. 
+Java provides a framework called the Java Collections Framework, which is a set of classes and 
+interfaces that provide commonly reusable collection data structures. These collections can be
+used to store, manipulate, and retrieve groups of objects. The Java Collections Framework 
+includes interfaces such as List, Set, Queue, and Map, along with their various implementations..
+Here are some key interfaces and classes in the Java Collections Framework:
+List Interface:
+Represents an ordered collection of elements.
+Common implementations include ArrayList, LinkedList, and Vector.
+
+1.List Interface:   // Important
+Represents an ordered collection of elements.
+Common implementations include ArrayList, LinkedList, and Vector.
+
+2.Set Interface: // Important
+Represents a collection that does not allow duplicate elements.
+Common implementations include HashSet and TreeSet.
+
+3.Queue Interface:
+Represents a collection designed for holding elements before processing.
+Common implementations include LinkedList and PriorityQueue.
+
+4.Map Interface:  // Important
+Represents a collection of key-value pairs.
+Common implementations include HashMap and TreeMap.
+
+5.Collections Class:
+Contains static utility methods for operating on collections.
+Provides methods for sorting, searching, and other common operations.
+
+6.Iterators:  // Important
+All collections provide an iterator that allows iterating over the collection of elements.
+
+

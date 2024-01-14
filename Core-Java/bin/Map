@@ -1,0 +1,111 @@
+Map is from java.util.Map
+Map interface is a part of the Java Collections Framework and is used to represent a collection
+of key-value pairs. Each key in a Map must be unique, and it is used to retrieve the 
+corresponding value. The Map interface is implemented by several classes in Java, with HashMap 
+being one of the most commonly used implementations. Here's an overview of using Map in Java:
+
+Creating a Map:
+// Creating a HashMap (a common implementation of Map)
+Map<String, Integer> myMap = new HashMap<>();
+
+
+Adding Key-Value Pairs:
+myMap.put("Key 1", 100);
+myMap.put("Key 2", 200);
+myMap.put("Key 3", 300);
+
+
+Accessing Value :
+int valueForKey2 = myMap.get("Key 2");
+System.out.println("Value for Key 2: " + valueForKey2);
+
+
+Iterating a Map:
+for (Map.Entry<String, Integer> entry : myMap.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue());
+}
+
+
+Checking if a Key Exists:
+boolean containsKey = myMap.containsKey("Key 1");
+
+
+Removing a Key-Value Pair:
+myMap.remove("Key 3");
+
+
+Map Size:
+int size = myMap.size();
+System.out.println("Size of Map: " + size);
+
+
+Other Implementations:
+Apart from HashMap, there are other implementations of the Map interface such as TreeMap
+(maintains key order) and LinkedHashMap (maintains insertion order).
+// TreeMap example
+Map<String, Integer> treeMap = new TreeMap<>();
+
+// LinkedHashMap example
+Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
+
+
+Note:-
+In Java, the hashCode() and equals() methods are fundamental methods defined in the Object 
+class. They are often overridden in classes that need to be used as keys in data structures 
+like HashMap, HashSet, etc. These methods are crucial for proper functioning of hash-based 
+collections.
+
+hashCode() Method:
+The hashCode() method in Java is used to get a hash code for the object through hashing 
+technique.
+The hash code is an integer value that represents the state of the object.
+It is used by hash-based collections to distribute objects among buckets, providing a more 
+efficient retrieval mechanism.
+When overriding hashCode(), the general contract is:
+
+If two objects are equal (as per the equals() method), they must have the same hash code.
+It's not required that two unequal objects have different hash codes, but it can improve the 
+efficiency of hash-based collections.
+Example hashCode() Override:
+@Override
+public int hashCode() {
+    // Compute hash code based on relevant fields
+    int result = 17;
+    result = 31 * result + field1.hashCode();
+    result = 31 * result + field2.hashCode();
+    return result;
+}
+equals() Method:
+The equals() method in Java is used to check if two objects are equal.
+It is important to override equals() whenever the natural notion of equality for the class 
+differs from the default behavior provided by Object (which compares memory addresses).
+When overriding equals(), the general contract is:
+
+Reflexive: x.equals(x) should return true.
+Symmetric: x.equals(y) should return the same result as y.equals(x).
+Transitive: If x.equals(y) and y.equals(z) are both true, then x.equals(z) should be true.
+Consistent: Multiple calls to equals() should consistently return the same result.
+Example equals() Override:
+
+@Override
+public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj == null || getClass() != obj.getClass()) return false;
+
+    // Compare relevant fields for equality
+    MyClass other = (MyClass) obj;
+    return Objects.equals(field1, other.field1) && Objects.equals(field2, other.field2);
+}
+Note: In the equals() method, it's common to use Objects.equals() to compare objects for 
+equality, especially for handling null values.
+
+When you override hashCode(), you should ensure that it is consistent with your equals() 
+implementation to maintain the contract mentioned earlier. Additionally, when using objects as
+ keys in hash-based collections, both methods should be overridden to ensure correct behavior.
+
+
+
+
+
+
+

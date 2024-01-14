@@ -1,0 +1,27 @@
+HashSet 
+
+HashSet is a class which implements Set interface.
+It does not allow any duplicate elements.
+It internally implements HashMap only, but it has only keys.
+In place of value it passes a constant.
+Internally it also calls hashcode and equals methods like HashMap.
+
+Create a HashSet
+Set<Integer> obj = new HashSet();
+
+Adding of Element-
+obj.add(900);
+obj.add(100);
+obj.add(50);
+
+Accessing any element
+obj.get(900);
+
+Removal of element
+obj.remove(100);
+
+
+To get size of HashSet
+obj.size();
+
+

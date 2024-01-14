@@ -1,0 +1,6 @@
+Synchronization -
+Every method is one kind of thread.
+main() method is called main thread. Alwayz program will start with main thread.
+Synchronization means if a thread is using a resource then it can not be shared
+by any other threads.
+After completion of synchronization block then only other thread can use it.
