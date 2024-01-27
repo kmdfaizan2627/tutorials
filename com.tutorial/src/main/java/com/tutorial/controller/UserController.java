@@ -19,7 +19,9 @@ import jakarta.websocket.server.PathParam;
 @RestController
 public class UserController {
 
-	List<Employee> listAll = new ArrayList<Employee>();
+	List<Employee> listAll = new ArrayList<Employee>(); // This will be available to this 
+	// class anywhere
+	
 
 	@GetMapping(value = "/hello")
 	public String hello() {
@@ -36,7 +38,7 @@ public class UserController {
 	// Next Level
 	@PostMapping(value = "/saveAll")
 	public List<Employee> saveEmployee(@RequestBody List<Employee> emp) {
-		List<Employee> list = new ArrayList<Employee>();
+		List<Employee> list = new ArrayList<Employee>(); // Only inside method
 		list.addAll(emp);
 		return list;
 	}
@@ -91,15 +93,15 @@ public class UserController {
 
 	}
 	
-	@GetMapping(value="/{roll}")
-	public String setRoll(@PathVariable String roll) {
-		Employee obj = new Employee();
-		obj.setName("Arish");
-		obj.setRoll(roll);
-		
-		return "Name is "+obj.getName()+" , Roll is "+obj.getRoll();
-		
-	}
+//	@GetMapping(value="/{roll}")
+//	public String setRoll(@PathVariable String roll) {
+//		Employee obj = new Employee();
+//		obj.setName("Arish");
+//		obj.setRoll(roll);
+//		
+//		return "Name is "+obj.getName()+" , Roll is "+obj.getRoll();
+//		
+//	}
 	
 	@GetMapping(value="/{name}/{roll}")
 	public String setRoll(@PathVariable String name,@PathVariable String roll) {
