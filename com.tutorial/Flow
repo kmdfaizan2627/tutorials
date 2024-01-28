@@ -1,5 +1,16 @@
+Dispatcher Servlet
+Dispatcher Servlet is also called as Front Controller
+The DispatcherServlet is a central servlet in the Spring MVC framework that receives incoming client
+requests and dispatches them to the appropriate handler for processing. It acts as the front 
+controller in the Spring MVC architecture, managing the flow of requests and responses.
 
- Dispatcher Servlet -> Handler Mapping -> Controller -> Models -> Service Layer ->
+Handler Mapping
+In Spring MVC, Handler Mapping is a crucial component responsible for mapping incoming HTTP requests
+ to the appropriate handler (controller) within the application. It plays a vital role in 
+ determining which controller should process a specific request based on the request URL.
+
+DAO layer - Data Access Object layer
+Dispatcher Servlet -> Handler Mapping -> Controller -> Models (Repository/Service Layer (DAO layer)->
  Controller -> View
  
  Dispatcher Servlet
@@ -9,7 +20,7 @@
  exceptions, and coordinating the view resolution and rendering process.  
  
  
- @PostMapping -> When we want to save a new employee..
+ @PostMapping -> When we want to save a new object..
  @GetMapping -> When we want to get data from database..
  @PutMapping -> When we want to update object data in database
  @DeleteMapping -> When we want to delete data/Object 
@@ -25,6 +36,9 @@
  It will provide Employee object reference.
  
  -------------
+ When we annotate a class with @Component  then we can call that class object/bean reference with the
+ help of @Autowired anywhere in application
+ 
  @Component
  @Component in Spring,  declaring a class as a Spring bean, and 
  it will be managed by the Spring IoC (Inversion of Control) container. 

@@ -1,0 +1,4 @@
+create database arish
+use arish
+show tables
+select * from employee
