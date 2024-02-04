@@ -1,9 +1,9 @@
 Git commands
 
 git clone ${git repo url}      // To checkout repository on local
-git pull origin ${branch name}  // To take all latest code from git repository
+git pull origin ${branch name}  // To take all latest code from git repo 
 git checkout -b ${branchName}       // To create a branch from existing branch you are now
-git status               // To check changes done in files
+git status               // To check modified files
 git add .         // To add all modified changes
 git add ${filename1} ${filename2}    // To add only those files which we want to add 
 git commit -m ${comment}            // To commit added files

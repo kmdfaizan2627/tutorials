@@ -1,0 +1,93 @@
+Dispatcher Servlet
+Dispatcher Servlet is also called as Front Controller
+The DispatcherServlet is a central servlet in the Spring MVC framework that receives incoming client
+requests and dispatches them to the appropriate handler for processing. It acts as the front 
+controller in the Spring MVC architecture, managing the flow of requests and responses.
+
+Handler Mapping
+In Spring MVC, Handler Mapping is a crucial component responsible for mapping incoming HTTP requests
+ to the appropriate handler (controller) within the application. It plays a vital role in 
+ determining which controller should process a specific request based on the request URL.
+
+DAO layer - Data Access Object layer
+Dispatcher Servlet -> Handler Mapping -> Controller -> Models (Repository/Service Layer (DAO layer)->
+ Controller -> View
+ 
+ Dispatcher Servlet
+ In Spring Boot, the DispatcherServlet is responsible for handling incoming HTTP requests, 
+ identifying the appropriate controller, executing controller methods, and managing the overall
+ request-response lifecycle. It plays a key role in mapping requests to controllers, handling 
+ exceptions, and coordinating the view resolution and rendering process.  
+ 
+ 
+ @PostMapping -> When we want to save a new object..
+ @GetMapping -> When we want to get data from database..
+ @PutMapping -> When we want to update object data in database
+ @DeleteMapping -> When we want to delete data/Object 
+ 
+ @Autowired
+ This annotation is used to get object reference.
+ In core java we were doing like
+ Employee obj = new Employee();
+ but in springboot we do like
+ 
+ @Autowired
+ Employee obj;
+ It will provide Employee object reference.
+ 
+ -------------
+ When we annotate a class with @Component  then we can call that class object/bean reference with the
+ help of @Autowired anywhere in application
+ 
+ @Component
+ @Component in Spring,  declaring a class as a Spring bean, and 
+ it will be managed by the Spring IoC (Inversion of Control) container. 
+
+ 
+ @Respository
+ This annotation is same as @Component ,declaring a class as a Spring bean, and 
+ it will be managed by the Spring IoC (Inversion of Control) container
+ but in addition to that it provide us database related exceptions also
+ 
+ @Controller
+ This annotation is same as @Component, declaring a class as a Spring bean, and 
+ it will be managed by the Spring IoC (Inversion of Control) container
+ but in addition to that it provide us it provide us mapping of urls.
+ 
+ @RestController
+ @Controller + @ResponseBody
+ The @RestController annotation is a specialization of @Controller and is introduced in 
+ Spring 4.0. It is used to define RESTful web services.
+ @Controller is typically used for traditional web applications.
+ 
+ @Service 
+ This annotation is same as @Component,declaring a class as a Spring bean, and 
+ it will be managed by the Spring IoC (Inversion of Control) container
+ Both  @Service and @Component is interchangeable.
+ 
+@Configuration
+Indicates that the class declares one or more @Bean methods and may be 
+processed by the Spring container to generate bean definitions and service requests.
+
+@ComponentScan: Tells Spring to scan and discover other components (such as controllers, 
+services, and repositories) in the package where the main class is located and its sub-packages.
+
+@EnableAutoConfiguration: Automatically configures the Spring application based on the 
+project's dependencies. It attempts to guess and configure beans that you are likely to need 
+based on classpath settings, other beans, and various property settings.
+
+@Bean
+In Spring Boot, @Bean is an annotation used to declare a method as a bean definition. When
+applied to a method within a configuration class, it indicates to the Spring IoC container 
+that the method should be used to create and configure a bean. The bean is then managed by the
+Spring container, and its lifecycle is controlled by the container.
+
+Important -
+In the context of the Spring Framework, a "bean" refers to a Java object that is managed by the
+ Spring IoC (Inversion of Control) container. The IoC container is responsible for creating, 
+ configuring, and managing these beans throughout their lifecycle. Beans are the fundamental 
+ building blocks of a Spring application and represent the components that make up the
+ application's architecture.
+
+ 
+ 
