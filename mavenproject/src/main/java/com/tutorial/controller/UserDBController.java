@@ -26,10 +26,13 @@ public class UserDBController {
 		return returnValue;
 	}
 	
-//	@GetMapping(value="/{id}")
-//	public User getUser(@PathVariable String id) {
-//		userService.
-//	}
+	@GetMapping(value="/{id}")
+	public User getUser(@PathVariable Integer id) {
+		
+		User userDetail = userService.getUser(id);
+		return userDetail;
+		//return userService.getUser(id);
+	}
 	
 	@PostMapping(value = "/saveAllUsers") // To save a list of users in database
 	public String saveAllEmployee(@RequestBody List<User> user) {

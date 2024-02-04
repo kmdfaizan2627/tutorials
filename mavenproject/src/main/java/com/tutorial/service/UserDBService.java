@@ -15,5 +15,7 @@ public interface UserDBService {
 	String deleteUser(Integer id);
 
 	User updateUser(User iser);
+	
+	User getUser(Integer id);
 
 }

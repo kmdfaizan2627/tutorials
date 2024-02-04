@@ -4,11 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.tutorial.models.User;
 import com.tutorial.repository.UserRepository;
 import com.tutorial.service.UserDBService;
-
+@Service
 public class UserDBServiceImpl implements UserDBService{
 	
 	@Autowired
@@ -30,6 +31,7 @@ public class UserDBServiceImpl implements UserDBService{
 	public String deleteUser(Integer id) {
 		    Optional<User> user = userRepository.findById(id);
 		    if(user.isPresent()) {
+		    	//User use = user.get();
 		    	userRepository.delete(user.get());
 		    }
 		return "User deleted successfully..";
@@ -48,6 +50,12 @@ public class UserDBServiceImpl implements UserDBService{
 			userRepository.saveAll(users);
 
 		return "Users saved successfully..";
+	}
+
+	@Override
+	public User getUser(Integer id) {
+		Optional<User> user = userRepository.findById(id);
+		return user.get();
 	}
 
 	
