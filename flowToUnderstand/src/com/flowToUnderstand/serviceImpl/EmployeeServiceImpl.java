@@ -8,26 +8,48 @@ import com.flowToUnderstand.service.EmployeeService;
 
 public class EmployeeServiceImpl implements EmployeeService{
 	
-	List<Employee> employee = new ArrayList<>();// Assume This is your repository
-                                               // which has many methods like JpaRepository.
+	List<Employee> listOfemployee = new ArrayList<>(9);// Assume This is your repository interface 
+	                                            // which is annotated as @Repository
+	                                            //which has methods like JpaRepository
+
 	@Override
 	public Employee save(Employee emp) {
-		    employee.add(emp); // saving employee in list 
-		    Employee returnValue = employee.get(0);
+		    listOfemployee.add(emp); // saving employee in list 
+		    Employee returnValue = listOfemployee.get(0);
 		return returnValue;
 	}
 
 	@Override
-	public Employee deleteEmployee(Long id) {
-		Employee returnValue = employee.remove(0);
-		return returnValue;
+	public void deleteEmployee(int index) {
+		 if (!listOfemployee.isEmpty()) { // Check if the list is not empty
+	            listOfemployee.remove(0); // Remove the element at index 0
+	        }
+		// employee.remove(0);
+		//return returnValue;
 	}
 
 	@Override
 	public Employee updateEmployee(int index) {
-		Employee returnValue = employee.get(index);
+		Employee returnValue = listOfemployee.get(index);
 		returnValue.setName("Ajay");
 		return returnValue;
 	}
+
+	@Override
+	public Employee puEmployee(Employee emp) {
+		emp.setName("Amanullah");
+		Employee setValues = emp;
+		return setValues;
+	}
+
+	@Override
+	public List<Employee> addEmployees(List<Employee> iEmployee) {
+		for(Employee i : iEmployee) {
+			listOfemployee.add(i);
+		}
+		listOfemployee.remove(1);
+		return listOfemployee;
+	}
+  
 
 }
